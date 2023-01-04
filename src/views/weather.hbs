@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/weather.css">
+
+    <script src="https://kit.fontawesome.com/b680263a54.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    {{>nav}}
+
+    <div class="weather-area">
+        <div class="weather-inner container">
+            <div class="input-area">
+                <form style="width:100% display:flex; justify-content:center; align-items:center; max-width:600px"
+                    action="">
+                    <div class="input-bar">
+                        <input type="text" id="searchVal" placeholder="Search for City" required>
+                        <iput type="submit" class="search-bt" id="submitBT">search</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="weather-detail-area">
+                <div class="weather-detail-box">
+                    <div class="mr-20">
+
+                        <div class="date-time">
+                            <span id="day" class="day op-txt">
+                                tuesday
+                            </span>
+                            <span id="date" class="time op-txt">
+                                10:00pm
+                            </span>
+                        </div>
+                        <div class="detail-area">
+                            <p class="city-name op-txt" ID="city">
+                                Get Output here...
+                            </p>
+                            <div id="temp-area" class="temp-area grid">
+                                <div class="temp-left">
+                                    <font id="weatherMod">demo</font>
+                                    <p><span id="temp">12.23</span><sup style="margin:0 10px">o</sup>C</p>
+                                </div>
+                                {{!-- <div class="temp-r">
+                                    <i class="fa-solid fa-temperature-high"></i>
+                                </div> --}}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+</body>
+
+<script src="js/main.js"></script>
+
+</html>

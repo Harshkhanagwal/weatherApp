@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+{{>nav}}
+
+<div class="about-section">
+    <div class="about-inner container">
+        <div class="about-img">
+            <img src="images/avtar.png" alt="about section image" height="340">
+        </div>
+        <div class="about-text">
+            <div class="about-head">
+                <h1>About</h1>
+                <div class="color-bar"></div>
+            </div>
+
+            <div class="about-txt-area">
+                <p>
+                    This website is a Personal project. <br>
+                    Based on weather API : developed by Harsh khanangwal
+                    <h4 class="tch-h">Technologies used :</h4>
+                    <ul>
+                        <li>HTML / CSS</li>
+                        <li>Javascript</li>
+                        <li>Node JS</li>
+                        <li>Express JS</li>
+                        <li>Handlebars Template Engine</li>
+
+                    </ul>
+                </p>
+            </div>
+
+           <a href="https://www.instagram.com/harsh.khanagwal"> <button class="cnt-bt">Contact Me</button> </a>
+        </div>
+
+    </div>
+</div>
+
+{{>footer}}
+</body>
+</html>
